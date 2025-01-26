@@ -11,10 +11,13 @@ const Hero = ({ title, content }: Props) => {
   return (
     <section className="flex h-[calc(100dvh-5rem)] flex-col items-center justify-center overflow-hidden">
       <motion.div
-        initial={{ x: "-50vw", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{
+          y: 100,
+          opacity: 0,
+        }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 0.7,
+          duration: 0.5,
           type: "spring",
           damping: 10,
         }}
@@ -22,11 +25,11 @@ const Hero = ({ title, content }: Props) => {
         {title}
       </motion.div>
       <motion.p
-        initial={{ x: "50vw", opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 0.7,
-          delay: 0.35,
+          duration: 0.5,
+          delay: 0.3,
           type: "spring",
           damping: 10,
         }}
