@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import LineGrid from "@/components/custom/line-grid";
 import Spotlight from "@/components/custom/spotlight";
+import Navigation from "@/components/custom/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <LineGrid />
         <Spotlight />
         {children}
+        <Navigation />
       </body>
     </html>
   );
