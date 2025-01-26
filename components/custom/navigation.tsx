@@ -14,11 +14,11 @@ const data = [
     href: "/",
   },
   {
-    title: "Products",
+    title: "Projects",
     icon: (
       <Package className="h-full w-full text-neutral-200 dark:text-neutral-300" />
     ),
-    href: "/products",
+    href: "/projects",
   },
   {
     title: "Components",
