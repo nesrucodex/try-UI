@@ -15,18 +15,18 @@ const Page = () => {
             transition={{
               layout: { duration: 0.5 },
             }}
-            className="my-4 max-w-lg px-8 text-center text-4xl font-bold md:max-w-4xl md:text-5xl lg:text-6xl"
+            className="my-4 flex max-w-lg flex-wrap items-center justify-center px-8 text-center text-4xl font-bold md:max-w-4xl md:text-5xl lg:text-6xl"
           >
-            Showcase and{" "}
+            Showcase and
             <WordRotate
-              className="inline text-orange-500"
+              className="mx-2 text-orange-500"
               words={["Celebrate", "Show Off", "Elevate", "Inspire"]}
-            />{" "}
-            Your{" "}
+            />
+            Your
             <WordRotate
-              className="inline text-orange-500"
+              className="mx-2 text-orange-500"
               words={["Animation", "Styling", "Creativity", "Innovation"]}
-            />{" "}
+            />
             Skills.
           </motion.h1>
         }

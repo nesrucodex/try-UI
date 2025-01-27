@@ -38,7 +38,7 @@ export function WordRotate({
     <div className="inline overflow-hidden py-2">
       <AnimatePresence mode="wait">
         <motion.h1
-          key={words[index]}
+          key={words[index]} // when key changes it tell that item is changed
           className={cn(className)}
           {...framerProps}
         >

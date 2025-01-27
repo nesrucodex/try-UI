@@ -3,7 +3,7 @@
 import { Activity, Component, HomeIcon, Package, SunMoon } from "lucide-react";
 
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/custom/dock";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const data = [
   {
@@ -43,8 +43,16 @@ const data = [
   },
 ];
 
+const DOCK_HIDDEN_PATHS = ["/projects"];
+
 const Navigation = () => {
   const router = useRouter();
+  const pathname = usePathname();
+
+  const isDockHidden = DOCK_HIDDEN_PATHS.includes(pathname);
+
+  if (isDockHidden) return null;
+
   return (
     <div className="absolute bottom-2 left-1/2 max-w-full -translate-x-1/2">
       <Dock className="items-end bg-transparent pb-3">
